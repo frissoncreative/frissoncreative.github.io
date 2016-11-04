@@ -1,0 +1,90 @@
+@import url(../node_modules/normalize.css/normalize.css);
+@font-face {
+  font-family: Apercu;
+  src: url(fonts/apercu_regular_pro.otf);
+  font-weight: 400; }
+@font-face {
+  font-family: Apercu;
+  src: url(fonts/apercu_bold_pro.otf);
+  font-weight: 700; }
+body, html {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  font-family: "Apercu", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+.table {
+  display: table;
+  height: 100%;
+  width: 100%; }
+  .table .table-cell {
+    vertical-align: middle;
+    display: table-cell;
+    height: 100%;
+    width: 100%; }
+
+.logo {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  -webkit-animation: show-logo 2s ease forwards;
+          animation: show-logo 2s ease forwards; }
+  .logo h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    color: #fff;
+    z-index: 200;
+    margin-top: -20px;
+    line-height: 40px; }
+  .logo .circle-half {
+    height: 200px;
+    width: 400px;
+    background: #000;
+    position: relative;
+    z-index: 100; }
+  .logo .top {
+    border-radius: 400px 400px 0 0;
+    -webkit-animation: move-to-the-right 800ms 2s cubic-bezier(0, 0, 0, 0.8) forwards;
+            animation: move-to-the-right 800ms 2s cubic-bezier(0, 0, 0, 0.8) forwards; }
+  .logo .bottom {
+    border-radius: 0 0 400px 400px;
+    -webkit-animation: move-to-the-left 800ms 2s cubic-bezier(0, 0, 0, 0.8) forwards;
+            animation: move-to-the-left 800ms 2s cubic-bezier(0, 0, 0, 0.8) forwards; }
+
+@-webkit-keyframes move-to-the-right {
+  0% {
+    left: 0px; }
+  100% {
+    left: 10px; } }
+
+@keyframes move-to-the-right {
+  0% {
+    left: 0px; }
+  100% {
+    left: 10px; } }
+@-webkit-keyframes move-to-the-left {
+  0% {
+    left: 0px; }
+  100% {
+    left: -10px; } }
+@keyframes move-to-the-left {
+  0% {
+    left: 0px; }
+  100% {
+    left: -10px; } }
+@-webkit-keyframes show-logo {
+  0% {
+    opacity: 0%; }
+  20% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+@keyframes show-logo {
+  0% {
+    opacity: 0%; }
+  20% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
