@@ -17,11 +17,11 @@ body, html {
 	top: 20px;
 	left: 20px;
 	font-size: 14px;
+	text-transform: uppercase;
 	animation: fade-in 2s ease forwards;
 
-
 	@media (min-width: $screen-sm-min) {
-		
+		font-size: 16px;
 	}
 	@media (min-width: $screen-md-min) {
 		
@@ -58,9 +58,9 @@ a.email {
 	}
 }
 
-$font-size-xs: 38px;
+$font-size-xs: 40px;
 $font-size-sm: 60px;
-$font-size-md: 70px;
+$font-size-md: 80px;
 $circle-size-xs: 200px;
 $circle-size-sm: 300px;
 $circle-size-md: 400px;
@@ -106,8 +106,8 @@ $circle-size-md: 400px;
 		z-index: 200;
 		text-transform: uppercase;
 		font-weight: 500;
-		font-style: italic;
-		letter-spacing: -3px;
+		// font-style: italic;
+		letter-spacing: -2px;
 
 		width: $circle-size-xs;
 		margin-top: -$font-size-xs / 2;
