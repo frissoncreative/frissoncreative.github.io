@@ -304,7 +304,7 @@ p.lead {
           margin-left: 50%; } }
     @media (min-width: 1200px) {
       #service .content {
-        padding: 20% 100px; } }
+        padding: 20% 90px; } }
     #service .content h1 {
       margin-top: 0; }
     #service .content * {
@@ -366,7 +366,14 @@ p.lead {
   padding: 20% 0; }
   #contact .contact {
     margin: 0 auto;
+    text-align: center;
     width: 100%; }
     @media (min-width: 768px) {
       #contact .contact {
         width: 60%; } }
+    #contact .contact a {
+      font-weight: normal;
+      color: #000;
+      text-decoration: none; }
+      #contact .contact a:hover {
+        text-decoration: underline; }
