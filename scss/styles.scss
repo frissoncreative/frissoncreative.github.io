@@ -1,9 +1,8 @@
-@import 'variables.scss';
+@import 'variables';
 
-@import 'node_modules/normalize.css/normalize.css';
+@import 'normalize';
 
-@import 'base.scss';
-@import 'typography.scss';
-@import 'hero.scss';
-@import 'sections.scss';
-
+@import 'base';
+@import 'typography';
+@import 'hero';
+@import 'sections';

@@ -1,15 +1,10 @@
-// @font-face {
-//     font-family: Apercu;
-//     src: url(fonts/apercu_regular_pro.otf);
-//     font-weight:400;
-// }
-// @font-face {
-//     font-family: Apercu;
-//     src: url(fonts/apercu_bold_pro.otf);
-//     font-weight:700;
-// }
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body, html {
 	font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42857143;
 }
 
 h1, h2, h3, h4, h5, h6 {
