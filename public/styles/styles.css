@@ -440,6 +440,9 @@ p {
 p.lead {
   font-size: 22px; }
 
+header {
+  height: 150px; }
+
 #hero {
   position: relative;
   width: 100%;
@@ -623,126 +626,3 @@ p.lead {
     opacity: 0; }
   100% {
     opacity: 0; } }
-#who {
-  padding: 12% 0;
-  text-align: center; }
-  #who .intro {
-    margin: 0 auto;
-    width: 100%; }
-    @media (min-width: 768px) {
-      #who .intro {
-        width: 60%; } }
-  #who .services {
-    margin-top: 100px; }
-    #who .services ul {
-      padding: 0;
-      margin: 20px 0 0 0;
-      list-style: none; }
-      #who .services ul li {
-        display: inline-block;
-        width: 100%;
-        padding: 0;
-        margin: 0 0 10px 0;
-        text-align: left;
-        padding: 0 10px;
-        font-size: 22px; }
-        @media (min-width: 768px) {
-          #who .services ul li {
-            width: 40%; }
-            #who .services ul li:nth-child(odd) {
-              text-align: right; } }
-
-#service {
-  overflow: hidden;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  #service .content {
-    background: #000;
-    color: #fff;
-    position: relative;
-    padding: 50px 20px; }
-    @media (min-width: 768px) {
-      #service .content {
-        padding-left: 10px;
-        height: 100%; } }
-    @media (min-width: 992px) {
-      #service .content {
-        padding: 20% 80px;
-        width: 50%; }
-        #service .content.right {
-          margin-left: 50%; } }
-    @media (min-width: 1200px) {
-      #service .content {
-        padding: 20% 90px; } }
-    #service .content h1 {
-      margin-top: 0; }
-    #service .content * {
-      position: relative;
-      z-index: 999; }
-  #service.betting {
-    background-image: url(../images/betting.jpg);
-    background-position: right center; }
-    @media (min-width: 768px) {
-      #service.betting .content:after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        background: #000;
-        left: 100%;
-        height: 110%;
-        width: 100px;
-        -webkit-transform: rotate(5deg) translateY(-5%) translateX(-65px);
-                transform: rotate(5deg) translateY(-5%) translateX(-65px); } }
-  #service.lifestyle {
-    background-image: url(../images/lifestyle.jpg);
-    background-position: left center; }
-    @media (min-width: 768px) {
-      #service.lifestyle .content:before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        background: #000;
-        left: 0%;
-        height: 110%;
-        width: 100px;
-        -webkit-transform: rotate(5deg) translateY(-5%) translateX(-35px);
-                transform: rotate(5deg) translateY(-5%) translateX(-35px); } }
-  #service.fitness {
-    background-image: url(../images/fitness.jpg);
-    background-position: right center; }
-    #service.fitness .content {
-      padding-right: 20px; }
-      @media (min-width: 768px) {
-        #service.fitness .content {
-          padding-right: 10px; } }
-      @media (min-width: 992px) {
-        #service.fitness .content {
-          padding-right: 60px;
-          width: 45%; } }
-      @media (min-width: 768px) {
-        #service.fitness .content:after {
-          content: ' ';
-          position: absolute;
-          top: 0;
-          background: #000;
-          left: 100%;
-          height: 110%;
-          width: 100px;
-          -webkit-transform: rotate(-5deg) translateY(-5%) translateX(-55px);
-                  transform: rotate(-5deg) translateY(-5%) translateX(-55px); } }
-
-#contact {
-  padding: 20% 0; }
-  #contact .contact {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%; }
-    @media (min-width: 768px) {
-      #contact .contact {
-        width: 60%; } }
-    #contact .contact a {
-      font-weight: normal;
-      color: #000;
-      text-decoration: none; }
-      #contact .contact a:hover {
-        text-decoration: underline; }
