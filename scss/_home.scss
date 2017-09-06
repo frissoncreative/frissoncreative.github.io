@@ -1,0 +1,91 @@
+#home {
+
+	height: 100%;
+	padding-top: $nav-height;
+
+	.hero {
+		height: 70%;
+	    @media (min-width: $screen-sm-min) {
+			height: 75%;
+	    }
+
+		background-image: url('../images/hero.jpg');
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+		line-height: 0.75;
+		position: relative;
+		a {
+			color: #fff;
+			opacity: 0.75;
+			&:hover {
+				color: #fff;
+				opacity: 1;
+			}
+		}
+		.down {
+			position: absolute;
+			bottom: 35px;
+			left: 50%;
+			font-size: 20px;
+			transform: translateX(-50%);
+		}
+		h1 {
+			margin: 0;
+			top: 50%;
+			position: relative;
+			transform: translateY(-50%);
+		}
+		small {
+			font-weight: normal;
+			font-style: italic;
+		}
+	}
+	.dictionary {
+		height: 30%;
+	    @media (min-width: $screen-sm-min) {
+			height: 25%;
+	    }
+
+		background: $frisson-black;
+		text-align: center;
+		color: #fff;
+
+		.definition {
+			top: 50%;
+			position: relative;
+			transform: translateY(-50%);
+		}
+
+		.fa-volume-up {
+			display: inline-block;
+			margin-left: 5px;
+			cursor: pointer;
+		}
+
+		.name {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.pronunciation {
+			font-size: 14px;
+		}
+		.noun {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		.statement {
+			font-size: 14px;
+		}
+
+		.name,
+		.pronunciation,
+		.noun,
+		.statement {
+			clear: both;
+			display: block;
+		}
+	}
+}

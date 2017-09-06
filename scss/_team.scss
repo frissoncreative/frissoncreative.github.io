@@ -1,0 +1,16 @@
+.team {
+	@include section-setup();
+	background-image: url('../images/team/team.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	.members {
+		.member {
+			@include columns(12);
+		    @media (min-width: $screen-sm-min) {
+	  			@include columns(4);
+	  		}
+		}
+	}
+}

@@ -1,8 +1,18 @@
 @import 'variables';
+@import 'mixins';
+@import 'utils';
 
 @import 'normalize';
 
 @import 'base';
 @import 'typography';
 @import 'header';
-@import 'hero';
+@import 'home';
+@import 'categories';
+@import 'influencers';
+@import 'traditional';
+@import 'video';
+@import 'clients';
+@import 'team';
+@import 'contact';
+@import 'footer';

@@ -1,0 +1,110 @@
+.contact {
+	@include section-setup();
+	text-align: left;
+	background: $frisson-black;
+	color: #fff;
+
+	h3 {
+		text-align: center;
+	}
+
+	.details {
+		@include columns(12);
+	    @media (min-width: $screen-sm-min) {
+  			@include columns(6);
+  		}
+	}
+	.form {
+		@include columns(12);
+	    @media (min-width: $screen-sm-min) {
+  			@include columns(6);
+  		}
+	}
+
+	.email,
+	.phone {
+		@include columns(12);
+	    @media (min-width: $screen-lg-min) {
+  			@include columns(6);
+  		}	
+	}
+
+	.email {
+		margin-bottom: 5px;
+	}
+
+	.phone {
+		margin-bottom: 20px;
+	    @media (min-width: $screen-lg-min) {
+  			margin-bottom: 0;
+  		}	
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		background: #fff;
+		border-radius: 2px;
+		border: none;
+		margin-bottom: 15px;
+		padding: 7px;
+	}
+
+	input {
+		height: 30px;
+	}
+
+	input[type=submit] {
+		height: 30px;
+		width: 120px;
+		float: right;
+		border: 2px solid #fff;
+		background: $frisson-black;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 11px;
+		cursor: pointer;
+
+		transition: $transitionOut;
+		&:hover {
+			transition: $transitionIn;
+			background: #fff;
+			color: $frisson-black;
+		}
+	}
+	.social {
+		@include columns(12);
+		margin-bottom: 30px;
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 0;
+				margin: 0;
+				a {
+					color: #fff;
+					font-size: 14px;
+					display: inline-block;
+					margin-right: 20px;
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $frisson-black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $frisson-black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $frisson-black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $frisson-black;
+}

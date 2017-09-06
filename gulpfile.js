@@ -8,6 +8,7 @@ var autoprefixer 	= require('gulp-autoprefixer');
 var concat 			= require('gulp-concat');
 var uglify 			= require('gulp-uglify');
 var livereload 		= require('gulp-livereload');
+var sourcemaps 		= require('gulp-sourcemaps');
 
 var paths = {
 	scripts: [
@@ -20,6 +21,7 @@ var paths = {
 gulp.task('sass', function () {
 	return sass(paths.styles)
 		.pipe(plumber())
+		.pipe(sourcemaps.init())
 
 		// error message
 		.on('error', function (err) {
@@ -29,6 +31,7 @@ gulp.task('sass', function () {
         .pipe(autoprefixer())
 
 		//save to dist folder
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('public/styles'))
 
 		//minify and add .min
