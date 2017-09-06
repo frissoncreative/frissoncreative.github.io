@@ -8,8 +8,10 @@
 	.members {
 		.member {
 			@include columns(12);
+			margin-bottom: 20px;
 		    @media (min-width: $screen-sm-min) {
 	  			@include columns(4);
+	  			margin-bottom: 0;
 	  		}
 		}
 	}
