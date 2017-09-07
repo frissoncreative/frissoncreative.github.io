@@ -11,29 +11,44 @@
 }
 
 body, html {
-	-webkit-font-smoothing: antialiased;
 	height: 100%;
-	font-family: "futura-pt", sans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-	line-height: 1.42857143;
 }
 
 .wf-loading {
 	opacity: 0;
 }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-
-	@media (min-width: $screen-sm-min) {
-		width: $screen-sm;
-	}
-
-	@media (min-width: $screen-md-min) {
-		width: $screen-md;
-	}
-
-	@media (min-width: $screen-lg-min) {
-		width: $screen-lg;
+section {
+	@extend .clearfix;
+	&.white {
+		@include section-setup();
 	}
 }
+
+#thankyou {
+	position: absolute;
+	top: $nav-height;
+	width: 100%;
+	background: $frisson-green;
+	color: #fff;
+	left: 0;
+	line-height: 50px;
+	z-index: 100;
+	text-align: center;
+	visibility: hidden;
+
+	&.show {
+		visibility: visible;
+	    animation-name: showThankYou;
+	    animation-duration: 10s;
+	    animation-fill-mode: forwards;
+	}
+}
+
+@keyframes showThankYou {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+

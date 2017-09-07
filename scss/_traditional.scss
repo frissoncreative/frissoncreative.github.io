@@ -1,0 +1,15 @@
+section.traditional {
+	@include section-setup();
+
+	background-image: url('../images/traditional.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-color: #f9f9f9;
+
+	.content-creation {
+		h3 {
+			padding-top: 70px;
+		}
+	}
+}

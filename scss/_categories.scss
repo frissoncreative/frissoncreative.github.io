@@ -1,0 +1,126 @@
+.categories {
+	.category {
+		@include columns(12);
+	    @media (min-width: $screen-md-min) {
+	    	@include columns(4);
+	    }
+
+		height: 450px;
+	    @media (min-width: $screen-sm-min) {
+	    	height: 250px;
+	    }
+	    @media (min-width: $screen-md-min) {
+	    	height: 400px;
+	    }
+	    @media (min-width: $screen-lg-min) {
+	    	height: auto;
+	    }
+
+		padding: 20px !important;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&.betting {
+			background-image: url('../images/betting.jpg');
+		}
+		&.fitness {
+			background-image: url('../images/fitness.jpg');
+		}
+		&.luxury {
+			background-image: url('../images/luxury.jpg');
+		}
+
+		.inner {
+			border: 2px solid #fff;
+			height: 100%;
+		}
+
+        .default {
+        	height: 100%;
+        	text-align: center;
+			.title {
+				height: 50%;
+				position: relative;
+				margin: 0 20px;
+				h2 {
+					margin: 0;
+					position: absolute;
+					bottom: 20px;
+					width: 100%;
+					color: #fff;
+					text-transform: uppercase;
+				}
+			}
+			.more {
+				position: relative;
+				height: 50%;
+				padding-top: 20px;
+				button {
+					font-size: 16px;
+					text-transform: uppercase;
+					min-width: 190px;
+					height: 40px;
+					padding: 0;
+					background: #fff;
+					border: none;
+					line-height: 36px;
+					text-align: center;
+					font-weight: bold;
+					cursor: pointer;
+					border: 2px solid #fff;
+					transition: $transitionOut;
+					&:hover {
+						transition: $transitionIn;
+						background: $frisson-black;
+						color: #fff;
+					}
+				}
+			}
+        }
+        .copy {
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	height: 100%;
+        	width: 100%;
+        	color: #fff;
+        	
+        	padding: 40px;
+		    @media (min-width: $screen-sm-min) {
+		    	padding: 60px;
+		    }
+
+        	.content {
+        		position: relative;
+        		top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+        	}
+        	.close {
+        		position: absolute;
+        		top: 40px;
+        		right: 40px;
+        		font-size: 20px;
+        		cursor: pointer;
+        	}
+        }
+
+        .default {
+        	opacity: 0;
+        	visibility: hidden;
+        }
+        .copy {
+        	opacity: 0;
+        	visibility: hidden;
+        }
+        .default.show {
+			opacity: 1;
+			visibility: visible;
+        }
+        .copy.show {
+			opacity: 1;
+			visibility: visible;
+        }
+	}
+}

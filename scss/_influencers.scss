@@ -1,0 +1,90 @@
+.influencers {
+	@include section-setup();
+
+	color: #fff;
+	background-image: url('../images/influencers.jpg');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.stats {
+	@extend .clearfix;
+	clear: both;
+
+	h3 {
+		margin-top: 70px;
+	}
+	.stat {
+		@include columns(6);
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	    &:nth-child(4) {
+	    	clear: left;
+	    }
+	    @media (min-width: $screen-sm-min) {
+	    	@include columns(3);
+	    	margin-bottom: 0;
+
+		    &:nth-child(4) {
+		    	clear: none;
+		    }
+	    }
+
+		.graphic {
+			width: auto;
+			height: auto;
+		    @media (min-width: $screen-sm-min) {
+				width: 150px;
+				height: 150px;
+		    }
+
+			margin: 0 auto;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+			span {
+				font-size: 26px;
+			    @media (min-width: $screen-sm-min) {
+					font-size: 32px;
+			    }
+
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				line-height: 150px;
+			}
+		}
+		.title {
+			font-size: 15px;
+			text-transform: uppercase;
+			margin-top: 20px;
+			font-weight: bold;
+		}
+
+		&.impressions {
+			.graphic {
+				background-image: url('../images/graphic.png');
+			}
+		}
+		&.reach {
+			.graphic {
+				background-image: url('../images/graphic.png');
+			}
+		}
+		&.influence {
+			.graphic {
+				background-image: url('../images/graphic.png');
+			}
+		}
+		&.engaging {
+			.graphic {
+				background-image: url('../images/percent.png');
+			}
+		}
+	}
+}

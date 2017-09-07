@@ -1,0 +1,85 @@
+.clients {
+    .inner {
+      @include columns(12);
+        @media (min-width: $screen-lg-min) {
+          @include columns(10);
+          @include offset(1);
+        }
+    }
+    padding: $section-padding;
+    text-align: center;
+
+	.logos {
+
+		.top,
+		.middle,
+		.bottom {
+			img {
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+				vertical-align: middle;
+
+				width: 29%;
+				margin: 30px 10%;
+
+			    @media (min-width: $screen-sm-min) {
+		  			margin: 20px 15px;
+					&.international_cricket_council {
+						width: 58px;
+					}
+					&.van_loon_sport {
+						width: 55px;
+					}
+					&.comeon {
+						width: 106px;
+					}
+					&.mobilebet {
+						width: 70px;
+					}
+					&.jaguar {
+						width: 80px;
+					}
+					&.champions_league {
+						width: 70px;
+					}
+					&.gaimerz {
+						width: 115px;
+					}
+					&.tonybet {
+						width: 100px;
+					}
+					&.rampley_co {
+						width: 103px;
+					}
+					&.netbet {
+						width: 105px;
+					}
+					&.nutristrength {
+						width: 113px;
+					}
+					&.arsenal_fan_tv {
+						width: 70px;
+					}
+					&.the_jockey_club {
+						width: 105px;
+					}
+					&.the_dapper_chapper {
+						width: 150px;
+					}
+					&.four_four_tweet {
+						width: 74px;
+					}
+			    }
+
+			    @media (min-width: $screen-md-min) {
+		  			margin: 20px 30px;
+		  		}
+
+			    @media (min-width: $screen-lg-min) {
+		  			margin: 20px 40px;
+		  		}
+			}
+		}
+	}
+}
