@@ -69,7 +69,7 @@ function hideContent(target) {
 	$(target + ' .copy').removeClass('show');
 }
 
-$( "nav a" ).click(function(event) {
+$( "header a" ).click(function(event) {
 	event.preventDefault();
 	target = $ (this).attr('href');
 	$('html, body').animate({
