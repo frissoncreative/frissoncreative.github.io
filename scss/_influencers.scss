@@ -34,31 +34,42 @@
 		    }
 	    }
 
-		.graphic {
-			width: auto;
+		.graphic svg {
+			width: 100%;
 			height: auto;
 		    @media (min-width: $screen-sm-min) {
 				width: 150px;
 				height: 150px;
 		    }
 
-			margin: 0 auto;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: 100%;
-
-			span {
-				font-size: 26px;
-			    @media (min-width: $screen-sm-min) {
-					font-size: 32px;
-			    }
-
-				text-align: center;
-				text-transform: uppercase;
-				font-weight: bold;
-				line-height: 150px;
-			}
+			// margin: 0 auto;
+			// background-position: center center;
+			// background-repeat: no-repeat;
+			// background-size: 100%;
 		}
+
+
+		.figure {
+			font-size: 26px;
+		    @media (min-width: $screen-sm-min) {
+				font-size: 32px;
+		    }
+
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			line-height: 150px;
+
+			position: absolute;
+			top: 0;
+			width: 100%;
+			margin: 0 -20px;
+		    @media (min-width: $screen-sm-min) {
+				width: 100%;
+				margin: 0 -10px;
+		    }
+		}
+
 		.title {
 			font-size: 15px;
 			text-transform: uppercase;
@@ -66,25 +77,25 @@
 			font-weight: bold;
 		}
 
-		&.impressions {
-			.graphic {
-				background-image: url('../images/graphic.png');
-			}
-		}
-		&.reach {
-			.graphic {
-				background-image: url('../images/graphic.png');
-			}
-		}
-		&.influence {
-			.graphic {
-				background-image: url('../images/graphic.png');
-			}
-		}
-		&.engaging {
-			.graphic {
-				background-image: url('../images/percent.png');
-			}
-		}
+		// &.impressions {
+		// 	.graphic {
+		// 		background-image: url('../images/graphic.png');
+		// 	}
+		// }
+		// &.reach {
+		// 	.graphic {
+		// 		background-image: url('../images/graphic.png');
+		// 	}
+		// }
+		// &.influence {
+		// 	.graphic {
+		// 		background-image: url('../images/graphic.png');
+		// 	}
+		// }
+		// &.engaging {
+		// 	.graphic {
+		// 		background-image: url('../images/percent.png');
+		// 	}
+		// }
 	}
 }
