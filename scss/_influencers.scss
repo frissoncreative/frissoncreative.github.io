@@ -99,3 +99,41 @@
 		// }
 	}
 }
+
+.ygCeXwTF_0 {
+	stroke-dasharray:1823 1825;
+	stroke-dashoffset:1824;
+}
+.start .ygCeXwTF_0 {
+	animation:ygCeXwTF_draw 2200ms ease-in-out 0ms forwards;
+}
+.ygCeXwTF_1 {
+	stroke-dasharray:912 914;
+	stroke-dashoffset:913;
+}
+.start .ygCeXwTF_1 {
+	animation:ygCeXwTF_draw 2200ms ease-in-out 333ms forwards;
+}
+.ygCeXwTF_2 {
+	stroke-dasharray:405 407;
+	stroke-dashoffset:406;
+}
+.start .ygCeXwTF_2 {
+	animation:ygCeXwTF_draw 2200ms ease-in-out 666ms forwards;
+}
+@keyframes ygCeXwTF_draw { 
+	100% {
+		stroke-dashoffset:0;
+	}
+}
+@keyframes ygCeXwTF_fade {
+	0% {
+		stroke-opacity:1;
+	}
+	93.54838709677419% {
+		stroke-opacity:1;
+	}
+	100% {
+		stroke-opacity:0;
+	}
+}

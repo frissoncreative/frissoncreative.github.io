@@ -1,7 +1,27 @@
 // On the load, resize dynamic images so fill the screen
 $(window).load(function(){
-  resizeFeatureImage();
+ 	resizeFeatureImage();
 });
+
+var waypoint = new Waypoint({
+	element: document.getElementById('influencers'),
+	handler: function(direction) {
+	 	$('.percentage').attr("class", "start")
+		$('.count').each(function () {
+		    $(this).prop('Counter',0).animate({
+		        Counter: $(this).attr('data-amount')
+		    }, {
+		        duration: 2000,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+		        }
+		    });
+		});
+		this.destroy()
+	}
+})
+
 // On the resize of the window, resize dynamic images so fill the screen
 var rtime;
 var timeout = false;
@@ -32,12 +52,6 @@ function resizeFeatureImage() {
 		});
     }
 }
-
-
-
-
-
-
 
 function play() {
 	var audio = document.getElementById("audio");
