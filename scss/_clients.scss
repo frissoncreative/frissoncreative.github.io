@@ -12,7 +12,8 @@
 	.logos {
 
 		.top,
-		.middle,
+		.upper-middle,
+		.lower-middle,
 		.bottom {
 			img {
 				display: inline-block;
@@ -69,6 +70,24 @@
 					}
 					&.four_four_tweet {
 						width: 74px;
+					}
+					&.skycop {
+						width: 100px;
+					}
+					&.mc_alson {
+						width: 100px;
+					}
+					&.matchbook {
+						width: 110px;
+					}
+					&.dugout {
+						width: 100px;
+					}
+					&.avia {
+						width: 100px;
+					}
+					&.alfred_dunhill_links_championship {
+						width: 110px;
 					}
 			    }
 
