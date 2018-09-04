@@ -46,7 +46,7 @@ function resizeEnd() {
 function resizeFeatureImage() {
     if ($(window).width() > 1200) {
 		fullWidth = $('.categories').width();
-		width = fullWidth / 3;
+		width = fullWidth / 4;
 		$('.categories .category').each( function(index, element) {
 			$(element).height(width - 40);
 		});

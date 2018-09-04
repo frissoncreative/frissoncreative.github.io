@@ -45,19 +45,22 @@
 						width: 70px;
 					}
 					&.gaimerz {
-						width: 115px;
+						width: 100px;
 					}
 					&.tonybet {
 						width: 100px;
 					}
 					&.rampley_co {
-						width: 103px;
+						width: 80px;
 					}
 					&.netbet {
-						width: 105px;
+						width: 90px;
 					}
 					&.nutristrength {
-						width: 113px;
+						width: 100px;
+					}
+					&.fansbet {
+						width: 60px;
 					}
 					&.arsenal_fan_tv {
 						width: 70px;
@@ -70,9 +73,6 @@
 					}
 					&.four_four_tweet {
 						width: 74px;
-					}
-					&.skycop {
-						width: 100px;
 					}
 					&.mc_alson {
 						width: 100px;
@@ -89,6 +89,12 @@
 					&.alfred_dunhill_links_championship {
 						width: 110px;
 					}
+					&.skycop {
+						width: 100px;
+					}
+					&.crickshouts {
+						width: 100px;
+					}
 			    }
 
 			    @media (min-width: $screen-md-min) {
@@ -96,7 +102,7 @@
 		  		}
 
 			    @media (min-width: $screen-lg-min) {
-		  			margin: 20px 40px;
+		  			margin: 20px 30px;
 		  		}
 			}
 		}

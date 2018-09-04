@@ -2,7 +2,10 @@
 	.category {
 		@include columns(12);
 	    @media (min-width: $screen-md-min) {
-	    	@include columns(4);
+	    	@include columns(6);
+	    }
+	    @media (min-width: $screen-lg-min) {
+	    	@include columns(3);
 	    }
 
 		height: 450px;
@@ -29,6 +32,9 @@
 		}
 		&.luxury {
 			background-image: url('../images/luxury.jpg');
+		}
+		&.sport {
+			background-image: url('../images/sport.jpg');
 		}
 
 		.inner {
