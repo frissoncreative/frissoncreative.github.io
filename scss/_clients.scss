@@ -11,100 +11,120 @@
 
 	.logos {
 
-		.top,
-		.upper-middle,
-		.lower-middle,
-		.bottom {
-			img {
-				display: inline-block;
-				max-width: 100%;
-				height: auto;
-				vertical-align: middle;
+		.logo-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			// justify-content: center;
+			align-items: center;
+			align-content: center;
+			
+			.img-container {
+				flex-grow: 1;
+				text-align: center;
+				margin: 20px;
 
-				width: 29%;
-				margin: 30px 10%;
-
-			    @media (min-width: $screen-sm-min) {
-		  			margin: 20px 15px;
-					&.international_cricket_council {
-						width: 58px;
-					}
-					&.van_loon_sport {
-						width: 55px;
-					}
-					&.comeon {
-						width: 106px;
-					}
-					&.mobilebet {
-						width: 70px;
-					}
-					&.jaguar {
-						width: 80px;
-					}
-					&.champions_league {
-						width: 70px;
-					}
-					&.gaimerz {
-						width: 100px;
-					}
-					&.tonybet {
-						width: 100px;
-					}
-					&.rampley_co {
-						width: 80px;
-					}
-					&.netbet {
-						width: 90px;
-					}
-					&.nutristrength {
-						width: 100px;
-					}
-					&.fansbet {
-						width: 60px;
-					}
-					&.arsenal_fan_tv {
-						width: 70px;
-					}
-					&.the_jockey_club {
-						width: 105px;
-					}
-					&.the_dapper_chapper {
-						width: 150px;
-					}
-					&.four_four_tweet {
-						width: 74px;
-					}
-					&.mc_alson {
-						width: 100px;
-					}
-					&.matchbook {
-						width: 110px;
-					}
-					&.dugout {
-						width: 100px;
-					}
-					&.avia {
-						width: 100px;
-					}
-					&.alfred_dunhill_links_championship {
-						width: 110px;
-					}
-					&.skycop {
-						width: 100px;
-					}
-					&.crickshouts {
-						width: 100px;
-					}
-			    }
-
-			    @media (min-width: $screen-md-min) {
-		  			margin: 20px 30px;
-		  		}
-
-			    @media (min-width: $screen-lg-min) {
-		  			margin: 20px 30px;
-		  		}
+				img {
+					max-width: 100px;
+					margin: auto;
+				}
 			}
 		}
+
+		// .top,
+		// .upper-middle,
+		// .lower-middle,
+		// .bottom {
+		// 	img {
+		// 		display: inline-block;
+		// 		max-width: 100%;
+		// 		height: auto;
+		// 		vertical-align: middle;
+
+		// 		width: 29%;
+		// 		margin: 30px 10%;
+
+		// 	    @media (min-width: $screen-sm-min) {
+		//   			margin: 20px 15px;
+		// 			&.international_cricket_council {
+		// 				width: 58px;
+		// 			}
+		// 			&.van_loon_sport {
+		// 				width: 55px;
+		// 			}
+		// 			&.comeon {
+		// 				width: 106px;
+		// 			}
+		// 			&.mobilebet {
+		// 				width: 70px;
+		// 			}
+		// 			&.jaguar {
+		// 				width: 80px;
+		// 			}
+		// 			&.champions_league {
+		// 				width: 70px;
+		// 			}
+		// 			&.gaimerz {
+		// 				width: 100px;
+		// 			}
+		// 			&.tonybet {
+		// 				width: 100px;
+		// 			}
+		// 			&.rampley_co {
+		// 				width: 80px;
+		// 			}
+		// 			&.netbet {
+		// 				width: 90px;
+		// 			}
+		// 			&.nutristrength {
+		// 				width: 100px;
+		// 			}
+		// 			&.fansbet {
+		// 				width: 60px;
+		// 			}
+		// 			&.arsenal_fan_tv {
+		// 				width: 70px;
+		// 			}
+		// 			&.the_jockey_club {
+		// 				width: 105px;
+		// 			}
+		// 			&.the_dapper_chapper {
+		// 				width: 150px;
+		// 			}
+		// 			&.four_four_tweet {
+		// 				width: 74px;
+		// 			}
+		// 			&.mc_alson {
+		// 				width: 100px;
+		// 			}
+		// 			&.matchbook {
+		// 				width: 110px;
+		// 			}
+		// 			&.dugout {
+		// 				width: 100px;
+		// 			}
+		// 			&.avia {
+		// 				width: 100px;
+		// 			}
+		// 			&.alfred_dunhill_links_championship {
+		// 				width: 110px;
+		// 			}
+		// 			&.skycop {
+		// 				width: 100px;
+		// 			}
+		// 			&.crickshouts {
+		// 				width: 100px;
+		// 			}
+		// 	    }
+
+		// 	    @media (min-width: $screen-md-min) {
+		//   			margin: 20px 30px;
+		//   		}
+
+		// 	    @media (min-width: $screen-lg-min) {
+		//   			margin: 20px 30px;
+		//   		}
+		// 	}
+		// }
 	}
 }

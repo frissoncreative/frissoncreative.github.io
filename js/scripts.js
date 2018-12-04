@@ -98,3 +98,24 @@ $( "#down" ).click(function(event) {
 	    scrollTop: ($(target).offset().top - 75)
 	}, 500);
 });
+
+// $('body').ihavecookies({
+// 	title: "Cookies & Privacy",
+// 	message: "This website uses cookies to ensure you get the best experience on our website.",
+// 	link: "/privacy.html",
+// 	uncheckBoxes: true,
+// 	// delay: 2000,
+// 	// expires: 30, 
+// 	cookieTypes: [
+// 		{
+// 			type: 'Analytics',
+// 			value: 'analytics',
+// 			description: 'Cookies related to site visits, browser types, etc.'
+// 		},
+// 	],
+// 	onAccept: function(event){
+// 		console.log(event);
+// 		ga('create', 'UA-106085657-1', 'auto');
+// 		ga('send', 'pageview');
+// 	}
+// });

@@ -23,15 +23,13 @@
 
         <script src="https://use.fontawesome.com/58b4f48eda.js"></script>
 
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+        <!-- <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-106085657-1', 'auto');
             ga('send', 'pageview');
         </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+
     </head>
     <body>
 
@@ -119,21 +117,6 @@
                     </div>
                 </div>
             </div>
-            <div class="category luxury">
-                <div class="inner">
-                    <div class="default show">
-                        <div class="title"><h2>Lifestyle &amp; Luxury</h2></div>
-                        <div class="more"><button onclick="showContent('.luxury')">More Info</button></div>
-                    </div>
-                    <div class="copy">
-                        <i class="close fa fa-times" aria-hidden="true" onclick="hideContent('.luxury')"></i>
-                        <div class="content">
-                            <p>As a founder of one of the UK’s leading Men’s Lifestyle blogs, Frisson is fully immersed in the luxury lifestyle sector. As influencers ourselves, we approach with a wealth of knowledge and insight, focused on achieving the most effective results for our clients.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
     </section>
 
     <section class="white">
@@ -251,35 +234,28 @@
                 <div class="inner">
                     <h3>Clients and Projects</h3>
                     <div class="logos">
-                        <div class="row top">
-                            <img class="international_cricket_council" src="/public/images/logos/ICC.png" alt="International Cricket Council" />
-                            <img class="van_loon_sport" src="/public/images/logos/van_loon_sport.png" alt="Van Loon Sport" />
-                            <img class="comeon" src="/public/images/logos/comeon.png" alt="Comeon!" />
-                            <img class="mobilebet" src="/public/images/logos/mobilebet.png" alt="Mobilebet" />
-                            <img class="jaguar" src="/public/images/logos/jaguar.png" alt="Jaguar" />
-                            <img class="champions_league" src="/public/images/logos/champions_league.png" alt="Champions League" />
-                        </div>
-                        <div class="row upper-middle">
-                            <img class="gaimerz" src="/public/images/logos/gaimerz.png" alt="Gaimerz" />
-                            <img class="tonybet" src="/public/images/logos/tonybet.png" alt="TonyBet" />
-                            <img class="rampley_co" src="/public/images/logos/rampley.png" alt="Rampley &amp; Co" />
-                            <img class="netbet" src="/public/images/logos/netbet.png" alt="NetBet" />
-                            <img class="nutristrength" src="/public/images/logos/nutistrength.png" alt="Nutristrength" />
-                            <img class="fansbet" src="/public/images/logos/fansbet.jpg" alt="The Jockey Club" />
-                        </div>
-                        <div class="row lower-middle">
-                            <img class="mc_alson" src="/public/images/logos/mc_alson.jpg" alt="McAlson" />
-                            <img class="matchbook" src="/public/images/logos/matchbook.jpg" alt="Matchbook" />
-                            <img class="dugout" src="/public/images/logos/dugout.jpg" alt="Dugout" />
-                            <img class="avia" src="/public/images/logos/avia.png" alt="Avia" />
-                            <img class="alfred_dunhill_links_championship" src="/public/images/logos/alfred_dunhill_links_championship.jpg" alt="Alfred Dunhill Links Championship" />
-                        </div>
-                        <div class="row bottom">
-                            <img class="skycop" src="/public/images/logos/skycop.jpg" alt="Skycop" />
-                            <img class="crickshouts" src="/public/images/logos/crickshouts.jpg" alt="The Jockey Club" />
-                            <img class="the_jockey_club" src="/public/images/logos/the_jockey_club.png" alt="The Jockey Club" />
-                            <img class="the_dapper_chapper" src="/public/images/logos/the_dapper_chapper.png" alt="The Dapper Chapper" />
-                            <img class="four_four_tweet" src="/public/images/logos/four_four_tweet.png" alt="Four Four Tweet" />
+                        <div class="logo-row">
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/alfred_dunhill_links_championship.jpg" alt="Alfred Dunhill Links Championship" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/ICC.png" alt="International Cricket Council" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/van_loon_sport.png" alt="Van Loon Sport" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/comeon.png" alt="Comeon!" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/mobilebet.png" alt="Mobilebet" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/champions_league.png" alt="Champions League" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/gaimerz.png" alt="Gaimerz" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/tonybet.png" alt="TonyBet" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/rampley.png" alt="Rampley &amp; Co" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/netbet.png" alt="NetBet" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/nutistrength.png" alt="Nutristrength" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/fansbet.jpg" alt="The Jockey Club" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/mc_alson.jpg" alt="McAlson" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/matchbook.jpg" alt="Matchbook" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/dugout.jpg" alt="Dugout" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/avia.png" alt="Avia" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/skycop.jpg" alt="Skycop" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/crickshouts.jpg" alt="The Jockey Club" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/the_jockey_club.png" alt="The Jockey Club" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/the_dapper_chapper.png" alt="The Dapper Chapper" /></div>
+                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/four_four_tweet.png" alt="Four Four Tweet" /></div>
                         </div>
                     </div>
                 </div>
@@ -399,7 +375,8 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
-    <script src="public/js/scripts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="public/js/scripts.js"></script>
 
     </body>
 </html>	

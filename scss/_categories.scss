@@ -2,10 +2,10 @@
 	.category {
 		@include columns(12);
 	    @media (min-width: $screen-md-min) {
-	    	@include columns(6);
+	    	@include columns(4);
 	    }
 	    @media (min-width: $screen-lg-min) {
-	    	@include columns(3);
+	    	@include columns(4);
 	    }
 
 		height: 450px;
