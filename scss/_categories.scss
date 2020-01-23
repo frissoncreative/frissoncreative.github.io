@@ -1,23 +1,32 @@
 .categories {
 	.category {
 		@include columns(12);
-	    @media (min-width: $screen-md-min) {
-	    	@include columns(4);
-	    }
-	    @media (min-width: $screen-lg-min) {
-	    	@include columns(4);
-	    }
+
+		@media (min-width: $screen-sm-min) {
+			@include columns(6);
+		}
+
+		@media (min-width: $screen-md-min) {
+			@include columns(3);
+		}
+
+		@media (min-width: $screen-lg-min) {
+			@include columns(3);
+		}
 
 		height: 450px;
-	    @media (min-width: $screen-sm-min) {
-	    	height: 250px;
-	    }
-	    @media (min-width: $screen-md-min) {
-	    	height: 400px;
-	    }
-	    @media (min-width: $screen-lg-min) {
-	    	height: auto;
-	    }
+
+		@media (min-width: $screen-sm-min) {
+			height: 250px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			height: 400px;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			height: auto;
+		}
 
 		padding: 20px !important;
 		background-position: center center;
@@ -27,12 +36,15 @@
 		&.betting {
 			background-image: url('../images/betting.jpg');
 		}
+
 		&.fitness {
 			background-image: url('../images/fitness.jpg');
 		}
+
 		&.luxury {
 			background-image: url('../images/luxury.jpg');
 		}
+
 		&.sport {
 			background-image: url('../images/sport.jpg');
 		}
@@ -42,13 +54,15 @@
 			height: 100%;
 		}
 
-        .default {
-        	height: 100%;
-        	text-align: center;
+		.default {
+			height: 100%;
+			text-align: center;
+
 			.title {
 				height: 50%;
 				position: relative;
 				margin: 0 20px;
+
 				h2 {
 					margin: 0;
 					position: absolute;
@@ -58,10 +72,12 @@
 					text-transform: uppercase;
 				}
 			}
+
 			.more {
 				position: relative;
 				height: 50%;
 				padding-top: 20px;
+
 				button {
 					font-size: 16px;
 					text-transform: uppercase;
@@ -76,6 +92,7 @@
 					cursor: pointer;
 					border: 2px solid #fff;
 					transition: $transitionOut;
+
 					&:hover {
 						transition: $transitionIn;
 						background: $frisson-black;
@@ -83,50 +100,56 @@
 					}
 				}
 			}
-        }
-        .copy {
-        	position: absolute;
-        	top: 0;
-        	left: 0;
-        	height: 100%;
-        	width: 100%;
-        	color: #fff;
-        	
-        	padding: 40px;
-		    @media (min-width: $screen-sm-min) {
-		    	padding: 60px;
-		    }
+		}
 
-        	.content {
-        		position: relative;
-        		top: 50%;
+		.copy {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			color: #fff;
+
+			padding: 40px;
+
+			@media (min-width: $screen-sm-min) {
+				padding: 60px;
+			}
+
+			.content {
+				position: relative;
+				top: 50%;
 				transform: translateY(-50%);
 				text-align: center;
-        	}
-        	.close {
-        		position: absolute;
-        		top: 40px;
-        		right: 40px;
-        		font-size: 20px;
-        		cursor: pointer;
-        	}
-        }
+			}
 
-        .default {
-        	opacity: 0;
-        	visibility: hidden;
-        }
-        .copy {
-        	opacity: 0;
-        	visibility: hidden;
-        }
-        .default.show {
+			.close {
+				position: absolute;
+				top: 40px;
+				right: 40px;
+				font-size: 20px;
+				cursor: pointer;
+			}
+		}
+
+		.default {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.copy {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.default.show {
 			opacity: 1;
 			visibility: visible;
-        }
-        .copy.show {
+		}
+
+		.copy.show {
 			opacity: 1;
 			visibility: visible;
-        }
+		}
 	}
 }

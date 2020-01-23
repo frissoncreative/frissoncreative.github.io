@@ -1,32 +1,38 @@
 .clients {
-    .inner {
-      @include columns(12);
-        @media (min-width: $screen-lg-min) {
-          @include columns(10);
-          @include offset(1);
-        }
-    }
-    padding: $section-padding;
-    text-align: center;
+	.inner {
+		@include columns(12);
+
+		@media (min-width: $screen-lg-min) {
+			@include columns(10);
+			@include offset(1);
+		}
+	}
+
+	padding: $section-padding;
+	text-align: center;
 
 	.logos {
-
 		.logo-row {
 			display: flex;
 			flex-direction: row;
-			flex-wrap: wrap;
+			flex-wrap: no-wrap;
 			// justify-content: center;
 			align-items: center;
 			align-content: center;
-			
+
 			.img-container {
 				flex-grow: 1;
 				text-align: center;
 				margin: 20px;
 
 				img {
-					max-width: 120px;
+					// max-width: 120px;
+					filter: grayscale(100%);
 					margin: auto;
+
+					&:hover {
+						filter: grayscale(0%);
+					}
 				}
 			}
 		}
