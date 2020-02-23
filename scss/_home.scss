@@ -13,15 +13,6 @@
 		flex-wrap: wrap;
 	}
 
-	.who,
-	.why {
-		@include columns(12);
-
-		@media (min-width: $screen-sm-min) {
-			@include columns(6);
-		}
-	}
-
 	.tagline {
 		text-align: center;
 		margin: 1.67em 0 1.87em 0;
