@@ -1,8 +1,12 @@
 #home {
 	@include section-setup();
-	padding-top: $nav-height;
 	background: $frisson-black;
-	color: #fff;
+	
+	padding: ($nav-height + 70px) 0 70px 0;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	.video {
 		width: 100%;

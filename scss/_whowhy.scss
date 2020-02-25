@@ -4,12 +4,17 @@
 	background: $frisson-black;
 	color: #fff;
 
-	.who,
-	.why {
-		@include columns(12);
-
-		@media (min-width: $screen-sm-min) {
-			@include columns(6);
-		}
+	h2 {
+		margin-bottom: 1rem;
+		margin-top: 2rem;
 	}
+
+	// .who,
+	// .why {
+	// 	@include columns(12);
+
+	// 	@media (min-width: $screen-sm-min) {
+	// 		@include columns(6);
+	// 	}
+	// }
 }
