@@ -1,15 +1,41 @@
 #home {
 	@include section-setup();
 	background: $frisson-black;
-	
-	padding: ($nav-height + 70px) 0 70px 0;
+
 	background: #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
+	padding: 0;
+	padding-top: $nav-height;
+	@media (min-width: $screen-sm-min) {
+		padding: ($nav-height + 70px) 0 70px 0;
+	}
+
+	.container {
+		@media (max-width: $screen-md-min) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
 	.video {
-		width: 100%;
+		@include columns(12);
+
+		@media (max-width: $screen-md-min) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@media (min-width: $screen-md-min) {
+			@include offset(2);
+			@include columns(8);
+		}
+		@media (min-width: $screen-lg-min) {
+			@include offset(1);
+			@include columns(10);
+		}
 	}
 
 	.container {

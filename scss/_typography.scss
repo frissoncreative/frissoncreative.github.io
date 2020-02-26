@@ -1,45 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
 
-body, html {
+body,
+html {
 	font-size: $text-size;
-  font-family: 'M PLUS 1p', sans-serif;
-  -webkit-font-smoothing: antialiased;
+	font-family: 'M PLUS 1p', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.6;
 }
 
-h1 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+}
+
+h1 {
 	font-size: 40px;
-    @media (min-width: $screen-sm-min) {
+
+	@media (min-width: $screen-sm-min) {
 		font-size: 75px;
-    }
+	}
 }
-h2 { 
-	font-size: 30px; 
+h2 {
+	font-size: 30px;
 }
-h3 { 
-	font-size: 21px; 
+h3 {
+	font-size: 21px;
 }
-h4 { 
-	font-size: 18px; 
+h4 {
+	font-size: 18px;
 }
-h5 { 
-	font-size: 14px; 
+h5 {
+	font-size: 14px;
 }
-h6 { 
-	font-size: 12px; 
+h6 {
+	font-size: 12px;
 }
 
 small {
-  font-size: 50%;
+	font-size: 50%;
 }
 
 h3 {
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 40px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 40px;
 }
 
 p {
-  margin: 0 0 10px;
+	margin: 0 0 10px;
 }
 
 p.lead {

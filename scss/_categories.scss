@@ -2,36 +2,42 @@
 	.category {
 		@include columns(12);
 
-		@media (min-width: $screen-sm-min) {
-			@include columns(6);
-		}
+		// @media (min-width: $screen-sm-min) {
+		// 	@include columns(6);
+		// }
 
-		@media (min-width: $screen-md-min) {
-			@include columns(3);
-		}
+		// @media (min-width: $screen-md-min) {
+		// 	@include columns(3);
+		// }
 
-		@media (min-width: $screen-lg-min) {
-			@include columns(3);
-		}
+		// @media (min-width: $screen-lg-min) {
+		// 	@include columns(3);
+		// }
 
-		height: 450px;
+		// height: 450px;
 
-		@media (min-width: $screen-sm-min) {
-			height: 250px;
-		}
+		// @media (min-width: $screen-sm-min) {
+		// 	height: 250px;
+		// }
 
-		@media (min-width: $screen-md-min) {
-			height: 400px;
-		}
+		// @media (min-width: $screen-md-min) {
+		// 	height: 400px;
+		// }
 
-		@media (min-width: $screen-lg-min) {
-			height: auto;
-		}
+		// @media (min-width: $screen-lg-min) {
+		// 	height: auto;
+		// }
 
-		padding: 20px !important;
+		padding: 80px 20px;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		text-align: center;
+		color: #fff;
+
+		h2 {
+			margin-top: 0;
+		}
 
 		&.betting {
 			background-image: url('../images/betting.jpg');
@@ -50,8 +56,36 @@
 		}
 
 		.inner {
-			border: 2px solid #fff;
-			height: 100%;
+			@include columns(12);
+
+			// @media (min-width: $screen-sm-min) {
+			// 	@include columns(6);
+			// }
+
+			@media (min-width: $screen-md-min) {
+				@include offset(1);
+				@include columns(10);
+			}
+
+			@media (min-width: $screen-lg-min) {
+				@include offset(2);
+				@include columns(8);
+			}
+
+			// width: 100%;
+
+			// // @media (min-width: $screen-sm-min) {
+			// // 	height: 250px;
+			// // }
+
+			// @media (min-width: $screen-md-min) {
+			// 	width: 60%;
+			// 	margin-left: 20%;
+			// }
+
+			// @media (min-width: $screen-lg-min) {
+			// 	height: auto;
+			// }
 		}
 
 		.default {
