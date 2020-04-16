@@ -1,381 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Frisson Creative</title> 
+		<title>Frisson Creative</title>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/public/images/favicons/manifest.json">
-        <link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#000000">
-        <meta name="theme-color" content="#ffffff">
-        
-        <link rel="stylesheet" href="public/styles/styles.min.css?140604082018">
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/public/images/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/public/images/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/public/images/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/public/images/favicons/manifest.json" />
+		<link rel="mask-icon" href="/public/images/favicons/safari-pinned-tab.svg" color="#000000" />
+		<meta name="theme-color" content="#ffffff" />
 
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+		<link rel="stylesheet" href="public/styles/styles.min.css?095410032020" />
 
-        <script src="https://use.fontawesome.com/58b4f48eda.js"></script>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-        <!-- <script>
+		<script src="https://use.fontawesome.com/58b4f48eda.js"></script>
+
+		<!-- <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-106085657-1', 'auto');
             ga('send', 'pageview');
         </script>
         <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="inner">
+					<div class="logo">
+						<a href="#home"><img src="/public/images/logo.png" alt="Frisson"/></a>
+						<span>Sport | Social | Synergy</span>
+					</div>
 
-    </head>
-    <body>
+					<ul>
+						<li><a href="#clients-and-projects">Clients and Projects</a></li>
+						<li><a href="#what-we-do">What We Do</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#home"><img src="/public/images/logo.png" alt="Frisson"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#what-we-do">What We Do</a></li>
-                    <li><a href="#clients-and-projects">Clients and Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+		<div id="thankyou">
+			<div class="container">Thank you for your email. We'll be in contact shortly.</div>
+		</div>
 
-    <div id="thankyou"><div class="container">Thank you for your email. We'll be in contact shortly.</div></div>
+		<section id="home">
+			<div class="container">
+				<div class="player">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe
+							class="embed-responsive-item"
+							src="https://www.youtube-nocookie.com/embed/OjHZS0sFWpc?controls=0&modestbranding=1&iv_load_policy=3&rel=0&autoplay=1&mute=1"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="home">
+		<!-- Clients -->
+		<section class="clients" id="clients-and-projects">
+			<div class="container">
+				<div class="row">
+					<div class="inner">
+						<h3>Clients and Projects</h3>
 
-        <div class="hero">
-            <h1>Award-winning<br/><small>communication professionals</small></h1>
-            <a href="#what-we-do" id="down"><i class="down fa fa-chevron-down" aria-hidden="true"></i></a>
-        </div>
-        <div class="dictionary">
-            <div class="definition">
-                <span class="name">
-                    Frisson 
-                    <i class="fa fa-volume-up" aria-hidden="true" onclick="play()"></i>
-                    <audio id="audio" src="/public/frisson.mp3">
-                </span>
-                <span class="pronunciation">ˈfriːsã,ˈfrɪsɒn/</span>
-                <span class="noun">noun</span>
-                <span class="statement">a sudden strong feeling of excitement; a thrill."a frisson of excitement"</span>
-            </div>
-        </div>
+						<div class="logos">
+							<div class="logo-row">
+								<a target="_blank" href="/public/casestudies/Dugout.pdf" class="img-container">
+									<img class="img-responsive" src="/public/images/logos/dugout.png" alt="Dugout" />
+								</a>
+								<div class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/nutistrength.png"
+										alt="Nutristrength"
+									/>
+								</div>
+								<a target="_blank" href="/public/casestudies/Fantom.pdf" class="img-container">
+									<img class="img-responsive" src="/public/images/logos/fantom.png" alt="Fantom" />
+								</a>
+							</div>
+						</div>
 
-    </section>
+						<div class="logos">
+							<div class="logo-row">
+								<a target="_blank" href="/public/casestudies/alfred_dunhill_links_championship.pdf" class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/alfred_dunhill_links_championship_blue.png"
+										alt="Alfred Dunhill Links Championship"
+									/>
+								</a>
+								<div class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/clements_and_church.png"
+										alt="Clements and Church"
+									/>
+								</div>
+								<a target="_blank" href="/public/casestudies/CO_case.pdf" class="img-container">
+									<img class="img-responsive" src="/public/images/logos/comeon.png" alt="Comeon!" />
+								</a>
+							</div>
+						</div>
+						<div class="logos">
+							<div class="logo-row">
+								<div class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/crickshouts.png"
+										alt="Crick Shouts"
+									/>
+								</div>
+								<a target="_blank" href="/public/casestudies/CryPal.pdf" class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/crystalpalace.png"
+										alt="Crystal Palace"
+									/>
+								</a>
+								<a target="_blank" href="/public/casestudies/Fudge.pdf" class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/fudge_urban.png"
+										alt="Fudge Urban"
+									/>
+								</a>
+								<div class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/four_four_tweet.png"
+										alt="Four Four Tweet"
+									/>
+								</div>
+								<a target="_blank" href="/public/casestudies/LV_case.pdf" class="img-container">
+									<img class="img-responsive" src="/public/images/logos/lv_bet.png" alt="LV Bet" />
+								</a>
+							</div>
+						</div>
+						<div class="logos">
+							<div class="logo-row">
+								<a target="_blank" href="/public/casestudies/newbury_racecourse.pdf" class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/newbury_racecourse.png"
+										alt="Newbury Racecourse"
+									/>
+								</a>
+								<a target="_blank" href="/public/casestudies/nissan.pdf" class="img-container">
+									<img class="img-responsive" src="/public/images/logos/nissan.png" alt="Nissan" />
+								</a>
+								<a target="_blank" href="/public/casestudies/oddschecker.pdf" class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/oddschecker.png"
+										alt="oddschecker"
+									/>
+								</a>
+								<a target="_blank" href="/public/casestudies/StAndrews.pdf" class="img-container">
+									<img
+										class="img-responsive"
+										src="/public/images/logos/st_andrews_links.png"
+										alt="St. Andrews Links"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="categories" id="what-we-do">
+		<!-- What we do -->
+		<section id="what-we-do" class="white social">
+			<div class="container">
+				<div class="inner">
+					<h3>Social Media and Community Management</h3>
+					<p>
+						Our team of highly skilled social media experts enable us to offer a range of community
+						management services, extending from one-off event support through to 24/7 account
+						takeovers and long term campaigns.
+					</p>
+					<p>
+						Whether our clients are looking to grow their followers, increase their engagement or
+						raise brand awareness, we are ideally positioned to support and manage this process in
+						the most effective way.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="influencers" id="influencers">
+			<div class="container">
+				<div class="row">
+					<div class="inner">
+						<h3>Influencer Marketing</h3>
+						<p>
+							We connect brands with their target audiences through the most relevant and effective
+							social influencers.
+						</p>
+						<p>
+							Our extensive network consists of the leading sports and football accounts on Twitter,
+							with highly engaged audiences.
+						</p>
+						<p>
+							We manage the entire process in-house, from ideation and talent management, through
+							content production and activation, right up to final reporting and analysis.
+						</p>
+						<p>we deliver campaigns tailored to achieve our client’s desired outcomes.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="traditional">
+			<div class="container">
+				<div class="row">
+					<div class="inner">
+						<h3>Online and traditional PR</h3>
+						<p>
+							We go beyond social channels to distribute our client’s key brand messages and
+							campaigns through both traditional offline media and digital platforms.
+						</p>
+						<p>
+							We utilise our established journalist relationships to secure coverage, links and
+							tagline in prominent media areas.
+						</p>
+						<p>
+							Our services also cover blogger outreach and the creation of engaging and shareable
+							content assets which we use to reach out to a comprehensive network of highly
+							respected bloggers.
+						</p>
+						<div class="content-creation">
+							<h3>Content creation</h3>
+							<p>
+								Our in-house design team produce high quality, tailored graphics, videos and
+								downloadable assets that showcase our client's ranges in both a unique and relevant
+								way.
+							</p>
+							<p>
+								We work closely with our clients to create custom, branded materials designed to be
+								shared and to take reach beyond a core audience, to attract and engage new
+								demographics.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="container">
+				<div class="row">
+					<div class="inner">
+						<h3>Video production and live streaming</h3>
+						<p>
+							Our suite of social video production and publishing tools allows our brands to
+							activate global audiences and deliver a truly immersive and engaging viewer
+							experience.
+						</p>
+						<p>
+							We provide live streaming to all major social networks by utilising HD broadcast
+							standard cameras and industry standard encoders and our offerings range from single
+							cam productions, all the way up to multi-camera setups with graphical overlays.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="category sport">
-                <div class="inner">
-                    <div class="default show">
-                        <div class="title"><h2>Sport</h2></div>
-                        <div class="more"><button onclick="showContent('.sport')">More Info</button></div>
-                    </div>
-                    <div class="copy">
-                        <i class="close fa fa-times" aria-hidden="true" onclick="hideContent('.sport')"></i>
-                        <div class="content">
-                            <p>Sport is our passion. Our club allegiances often divide us on opinions, but as an agency, we are united by our shared love of all things sporting.</p>
-                            <p>In addition to many years of combined sports marketing experience, we also run some of the most engaged digital sports accounts in the U.K.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="category betting">
-                <div class="inner">
-                    <div class="default show">
-                        <div class="title"><h2>Betting &amp; E-Sports</h2></div>
-                        <div class="more"><button onclick="showContent('.betting')">More Info</button></div>
-                    </div>
-                    <div class="copy">
-                        <i class="close fa fa-times" aria-hidden="true" onclick="hideContent('.betting')"></i>
-                        <div class="content">
-                            <p>The team at Frisson Creative has developed a significant understanding of the sports betting industry and an extensive contact book from which to leverage that knowledge.</p>
-                            <p>In a crowded and competitive market place we specialise in enhancing the profile of brands through a combination of mainstream and social media. Delivering communications on any scale, from press releases and launch activations to creative campaign management and media platform takeovers.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="category fitness">
-                <div class="inner">
-                    <div class="default show">
-                        <div class="title"><h2>Fitness</h2></div>
-                        <div class="more"><button onclick="showContent('.fitness')">More Info</button></div>
-                    </div>
-                    <div class="copy">
-                        <i class="close fa fa-times" aria-hidden="true" onclick="hideContent('.fitness')"></i>
-                        <div class="content">
-                            <p>In short, we're fitness-addicts. Experienced in managing the PR for some of Europe’s leading sports nutrition companies. The Frisson Creative team are well versed in delivering engaging influencer outreach campaigns together with a more traditional product PR offering.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+		<!-- Sectors -->
+		<section class="categories">
+			<div class="category sport">
+				<div class="container">
+					<div class="inner">
+						<div class="title"><h2>Sport</h2></div>
+						<p>
+							Sport is our passion. Our club allegiances often divide us on opinions, but as an
+							agency, we are united by our shared love of all things sporting.
+						</p>
+						<p>
+							In addition to many years of combined sports marketing experience, we also run some of
+							the most engaged digital sports accounts in the U.K.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="category betting">
+				<div class="container">
+					<div class="inner">
+						<h2>Betting</h2>
+						<p>
+							The team at Frisson Creative has developed a significant understanding of the sports
+							betting industry and an extensive contact book from which to leverage that knowledge.
+						</p>
+						<p>
+							In a crowded and competitive market place we specialise in enhancing the profile of
+							brands through a combination of mainstream and social media. Delivering communications
+							on any scale, from press releases and launch activations to creative campaign
+							management and media platform takeovers.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="category fitness">
+				<div class="container">
+					<div class="inner">
+						<h2>Fitness</h2>
+						<p>
+							In short, we're fitness-addicts. Experienced in managing the PR for some of Europe’s
+							leading sports nutrition companies. The Frisson Creative team are well versed in
+							delivering engaging influencer outreach campaigns together with a more traditional
+							product PR offering.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="category luxury">
+				<div class="container">
+					<div class="inner">
+						<h2>Lifestyle &amp; Luxury</h2>
+						<p>
+							As a founder of one of the UK’s leading Men’s Lifestyle blogs, Frisson is fully
+							immersed in the luxury lifestyle sector. As influencers ourselves, we approach with a
+							wealth of knowledge and insight, focused on achieving the most effective results for
+							our clients.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="white">
-        <div class="container">
-            <div class="inner">
-                <h3>Social Media and Community Management</h3>
-                <p>Our team of highly skilled social media experts enable us to offer a range of community management services, extending from one-off event support through to 24/7 account takeovers and long term campaigns.</p>
-                <p>Whether our clients are looking to grow their followers, increase their engagement or raise brand awareness, we are ideally positioned to support and manage this process in the most effective way.</p>
-            </div>
-        </div>
-    </section>
+		<!-- Case Studies -->
+		<!-- <section class="case-studies" id="case-studies">
+			<div class="container">
+				<div class="row">
+					<h3>Case Studies</h3>
+				</div>
+			</div>
+			<div class="studies container">
+				<div class="row">
+					<div class="study">
+						<a target="_blank" href="/public/casestudies/oddschecker.pdf" class="btn oddschecker"
+							>Oddschecker</a
+						>
+					</div>
+					<div class="study">
+						<a target="_blank" href="/public/casestudies/newbury_racecourse.pdf" class="btn newbury"
+							>Newbury Racecourse</a
+						>
+					</div>
+					<div class="study">
+						<a
+							target="_blank"
+							href="/public/casestudies/alfred_dunhill_links_championship.pdf"
+							class="btn alfred"
+							>Alfred Dunhill</a
+						>
+					</div>
+				</div>
+			</div>
+		</section> -->
 
-    <section class="influencers" id="influencers">
-        <div class="container">
-            <div class="row">
-                <div class="inner">
-                    <h3>Influencer Marketing</h3>
-                    <p>We connect brands with their target audiences through the most relevant and effective social influencers.</p>
-                    <p>Our extensive network consists of the leading sports and football accounts on Twitter, with highly engaged audiences.</p>
-                    <p>We manage the entire process in-house, from ideation and talent management, through content production and activation, right up to final reporting and analysis.</p>
-                    <p>we deliver campaigns tailored to achieve our client’s desired outcomes.</p>
-                </div>
-                <div class="stats">
-                    <h3>Stats</h3>
-                    <div class="stat impressions">
-                        <div class="graphic">
-                            <svg width="310" height="310" viewBox="0 0 310 310" xmlns="http://www.w3.org/2000/svg">
-                                <g transform="translate(-208 -146)" fill="none" fill-rule="evenodd">
-                                    <circle stroke="#FFF" stroke-width="30" cx="363" cy="301" r="140"/>
-                                    <circle stroke="#000" stroke-width="15" cx="363" cy="301" r="132.5"/>
-                                    <circle stroke="#FFF" stroke-width="5" cx="363" cy="301" r="127.5"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="figure"><span class="count" data-amount="100">0</span>M+</div>
-                        <div class="title">Impressions each month</div>
-                    </div>
-                    <div class="stat reach">
-                        <div class="graphic">
-                            <svg width="310" height="310" viewBox="0 0 310 310" xmlns="http://www.w3.org/2000/svg">
-                                <g transform="translate(-208 -146)" fill="none" fill-rule="evenodd">
-                                    <circle stroke="#FFF" stroke-width="30" cx="363" cy="301" r="140"/>
-                                    <circle stroke="#000" stroke-width="15" cx="363" cy="301" r="132.5"/>
-                                    <circle stroke="#FFF" stroke-width="5" cx="363" cy="301" r="127.5"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="figure"><span class="count" data-amount="50">0</span>M</div>
-                        <div class="title">Reach</div>
-                    </div>
-                    <div class="stat influence">
-                        <div class="graphic">
-                            <svg width="310" height="310" viewBox="0 0 310 310" xmlns="http://www.w3.org/2000/svg">
-                                <g transform="translate(-208 -146)" fill="none" fill-rule="evenodd">
-                                    <circle stroke="#FFF" stroke-width="30" cx="363" cy="301" r="140"/>
-                                    <circle stroke="#000" stroke-width="15" cx="363" cy="301" r="132.5"/>
-                                    <circle stroke="#FFF" stroke-width="5" cx="363" cy="301" r="127.5"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="figure"><span class="count" data-amount="1000">0</span>+</div>
-                        <div class="title">Influencers</div>
-                    </div>
-                    <div class="stat engaging">
-                        <div class="graphic">
-                            <svg class="percentage" width="310" height="310" viewBox="0 0 310 310" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path d="M155 290c74.558 0 135-60.442 135-135 0-74.558-60.442-135-135-135C80.442 20 20 80.442 20 155c0 74.558 60.442 135 135 135zm0 20C69.396 310 0 240.604 0 155S69.396 0 155 0s155 69.396 155 155-69.396 155-155 155z" fill="#484848" fill-rule="nonzero" class="ygCeXwTF_0"></path>
-                                    <path stroke="#FFF" stroke-width="20" transform="rotate(90 155 155)" d="M10,155A145,145 0,1,1 300,155A145,145 0,1,1 10,155" class="ygCeXwTF_1"></path>
-                                    <path d="M155 0C87.407 0 28.224 43.66 7.602 106.926l19.016 6.198C44.576 58.03 96.128 20 155 20V0z" fill="#484848" fill-rule="nonzero" class="ygCeXwTF_2"></path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="figure"><span class="count" data-amount="80">0</span>%</div>
-                        <div class="title">Of brands are already engaging in influencer marketing activity</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Leadership -->
+		<section class="team">
+			<div class="container">
+				<div class="row">
+					<h3>The Leadership Team</h3>
+				</div>
+				<div class="row members">
+					<div class="member">
+						<img src="public/images/team/Adam.jpg" alt="" class="img-responsive" />
+						<p class="member-name">Adam</p>
+						<div class="bio">
+							<p>
+								<b>Background:</b> Award-winning communications expert with a sports sponsorship and
+								digital background. Activation experience of everything from Premier League football
+								teams to European Tour Golf sponsorships.
+							</p>
+							<p>
+								<b>In his spare time:</b> Plays football too many times a week for his age, writes
+								for men's lifestyle publications and enjoys a scotch.
+							</p>
+						</div>
+					</div>
+					<div class="member">
+						<img src="public/images/team/Matt.jpg" alt="" class="img-responsive" />
+						<p class="member-name">Matt</p>
+						<div class="bio">
+							<p>
+								<b>Background:</b> Content and communications expert contributing across a host of
+								major sporting events. Has experience working as an in-house PR for a Premier League
+								football club and within media teams for everything from pro-sailing, European Tour
+								Golf and leading sports charities.
+							</p>
+							<p>
+								<b>In his spare time:</b> Long suffering Spurs fan and crime thriller enthusiast.
+							</p>
+						</div>
+					</div>
+					<div class="member">
+						<img src="public/images/team/Sam.jpg" alt="" class="img-responsive" />
+						<p class="member-name">Sam</p>
+						<div class="bio">
+							<p>
+								<b>Background:</b> Sent over 175,000 tweets. Managed some of Twitter's largest
+								communities. Previously Head of Social Media at Liverpool Football Club. Has a
+								passion for posting shareable content.
+							</p>
+							<p>
+								<b>In his spare time:</b> Plays Cricket every Saturday in the summer and Football in
+								the winter. Endeavours to complete a triathlon this summer. Also collects alcohol.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="traditional">
-        <div class="container">
-            <div class="row">
-                <div class="inner">
-                    <h3>Online and traditional PR</h3>
-                    <p>We go beyond social channels to distribute our client’s key brand messages and campaigns through both traditional offline media and digital platforms. </p>
-                    <p>We utilise our established journalist relationships to secure coverage, links and tagline in prominent media areas. </p>
-                    <p>Our services also cover blogger outreach and the creation of engaging and shareable content assets which we use to reach out to a comprehensive network of highly respected bloggers.</p>
-                    <div class="content-creation">
-                        <h3>Content creation</h3>
-                        <p>Our in-house design team produce high quality, tailored graphics, videos and downloadable assets that showcase our client's ranges in both a unique and relevant way.</p>
-                        <p>We work closely with our clients to create custom, branded materials designed to be shared and to take reach beyond a core audience, to attract and engage new demographics.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="inner">
+						<h2 class="text-center">
+							We are Frisson Creative.<br />
+							Living Sport. In Social. In Synergy with you.
+						</h2>
+						<h3>Get in touch</h3>
+						<div class="row">
+							<div class="details">
+								<div class="row">
+									<address>
+										The Warehouse<br />
+										47-49 Cowleaze Road<br />
+										Kingston Upon Thames<br />
+										KT2 6DZ<br />
+										UK
+									</address>
+								</div>
+								<div class="row">
+									<div class="email">adam@frissoncreativeagency.com</div>
+									<div class="phone">+44 (0) 792 1710 902</div>
+								</div>
+								<div class="row">
+									<div class="email">matt@frissoncreativeagency.com</div>
+									<div class="phone">+44 (0) 7946 642 178</div>
+								</div>
+								<div class="row">
+									<div class="email">sam@frissoncreativeagency.com</div>
+									<div class="phone">+44 (0) 7835 472 827</div>
+								</div>
+							</div>
+							<div class="form">
+								<form action="https://formspree.io/adam@frissoncreativeagency.com" method="POST">
+									<input type="hidden" name="_subject" value="Contact from website" />
+									<input
+										type="hidden"
+										name="_next"
+										value="http://www.frissoncreativeagency.com?email=sent"
+									/>
+									<input type="text" name="name" placeholder="Name" />
+									<input type="email" name="_replyto" placeholder="Email" />
+									<textarea rows="5" name="message">Message</textarea>
+									<input type="submit" value="Send" onclick="sending(this)" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="video">
-        <div class="container">
-            <div class="row">
-                <div class="inner">
-                    <h3>Video production and live streaming</h3>
-                    <p>Our suite of social video production and publishing tools allows our brands to activate global audiences and deliver a truly immersive and engaging viewer experience. </p>
-                    <p>We provide live streaming to all major social networks by utilising HD broadcast standard cameras and industry standard encoders and our offerings range from single cam productions, all the way up to multi-camera setups with graphical overlays. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="clients" id="clients-and-projects">
-        <div class="container">
-            <div class="row">
-                <div class="inner">
-                    <h3>Clients and Projects</h3>
-                    <div class="logos">
-                        <div class="logo-row">
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/alfred_dunhill_links_championship.jpg" alt="Alfred Dunhill Links Championship" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/van_loon_sport.png" alt="Van Loon Sport" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/comeon.png" alt="Comeon!" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/mobilebet.png" alt="Mobilebet" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/gaimerz.png" alt="Gaimerz" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/tonybet.png" alt="TonyBet" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/rampley.png" alt="Rampley &amp; Co" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/netbet.png" alt="NetBet" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/nutistrength.png" alt="Nutristrength" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/fansbet.jpg" alt="The Jockey Club" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/mc_alson.jpg" alt="McAlson" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/matchbook.jpg" alt="Matchbook" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/dugout.jpg" alt="Dugout" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/avia.png" alt="Avia" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/skycop.jpg" alt="Skycop" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/crickshouts.jpg" alt="The Jockey Club" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/four_four_tweet.png" alt="Four Four Tweet" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/im_football.jpg" alt="I'm Football" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/lv_bet.jpg" alt="LV Bet" /></div>
-                            <div class="img-container"><img class="img-responsive" src="/public/images/logos/fantom.jpg" alt="Fantom" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="team">
-        <div class="container">
-            <div class="row">
-                <h3>The team</h3>
-            </div>
-            <div class="row members">
-                <div class="member">
-                    <img src="public/images/team/Adam.jpg" alt="" class="img-responsive">
-                    <p class="member-name">Adam</p>
-                    <div class="bio">
-                        <p><b>Background:</b> Award-winning communications expert with a sports sponsorship and digital background. Activation experience of everything from Premier League football teams to European Tour Golf sponsorships.</p>
-                        <p><b>In his spare time:</b> Plays football too many times a week for his age, writes for men's lifestyle publications and enjoys a scotch.</p>
-                    </div>
-                </div>
-                <div class="member">
-                    <img src="public/images/team/Matt.jpg" alt="" class="img-responsive">
-                    <p class="member-name">Matt</p>
-                    <div class="bio">
-                        <p><b>Background:</b> Content and communications expert contributing across a host of major events within the sporting calendar. Has experience working as an in-house PR for a Premier League football club and within media teams for everything from pro-sailing, European Tour Golf and leading sports charities. </p>
-                        <p><b>In his spare time:</b> Long suffering Tottenham Hotspur fan, former Dubai resident and crime thriller enthusiast. </p>
-                    </div>
-                </div>
-                <div class="member">
-                    <img src="public/images/team/Sam.jpg" alt="" class="img-responsive">
-                    <p class="member-name">Sam</p>
-                    <div class="bio">
-                        <p><b>Background:</b> Sent over 150,000 tweets. Managed some of Twitter's largest communities. Previously head of social media at Liverpool Football Club. Has a passion for posting shareable content and has the knowledge of what makes someone hit the RT or Like or Share button.</p>
-                        <p><b>In his spare time:</b> Runs an award-winning blog and Twitter account named @FourFourTweet. Plays Cricket every Saturday in the summer and Football in the winter. Midweek, he partakes in Muay Thai and Boxing. Endeavours to complete a triathlon this summer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row members">
-                <div class="member">
-                    <img src="public/images/team/Alex.jpg" alt="" class="img-responsive">
-                    <p class="member-name">Alex</p>
-                    <div class="bio">
-                        <p><b>Background:</b> A digital native, whose expertise include copywriting, digital editing and social media management across a range of sectors including sport, fashion and lifestyle. </p>
-                        <p><b>In his spare time:</b> A coffee connoisseur, with a keen interest in brunch. Regularly contributes to an an award-winning blog and enjoys a knock-up on the tennis courts. </p>
-                    </div>
-                </div>
-                <div class="member">
-                    <img src="public/images/team/Ryan.jpg" alt="" class="img-responsive">
-                    <p class="member-name">Ryan</p>
-                    <div class="bio">
-                        <p><b>Background:</b> Community management and social media expert from a sports media background. Specialise in growth and engagement with experience in working with elite football clubs and brands.</p>
-                        <p><b>In his spare time:</b> Runs a network of leading social media accounts with an unhealthy obsession for football.</p>
-                    </div>
-                </div>
-                <div class="member">
-                    <img src="public/images/team/Elliot.jpg" alt="" class="img-responsive">
-                    <p class="member-name">Elliott</p>
-                    <div class="bio">
-                        <p><b>Background:</b> Founder and owner of one of the most influential online fan networks. Specialises in social media and graphic design</p>
-                        <p><b>In his spare time:</b> Likes to sit deep and dictate play on a Sunday, watches football at every possible opportunity.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="inner">
-                    <h3>Get in touch</h3>
-                    <div class="row">
-                        <div class="details">
-                            <div class="row">
-                                <div class="email">adam@frissoncreativeagency.com</div>
-                                <div class="phone">+44 (0) 792 1710 902</div>
-                            </div>
-                            <div class="row">
-                                <div class="email">matt@frissoncreativeagency.com</div>
-                                <div class="phone">+44 (0) 7946 642 178</div>
-                            </div>
-                            <div class="row">
-                                <div class="email">sam@frissoncreativeagency.com</div>
-                                <div class="phone">+44 (0) 7835 472 827</div>
-                            </div>
-<!-- 
-                            <div class="row">
-                                <div class="social">
-                                    <h4>Follow Us</h4>
-                                    <ul>
-                                        <li>
-                                            <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                            <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
- -->
-                        </div>
-                        <div class="form">
-                            <form action="https://formspree.io/adam@frissoncreativeagency.com" method="POST">
-                                <input type="hidden" name="_subject" value="Contact from website" />
-                                <input type="hidden" name="_next" value="http://www.frissoncreativeagency.com?email=sent" />
-                                <input type="text" name="name" placeholder="Name" />
-                                <input type="email" name="_replyto" placeholder="Email" />
-                                <textarea rows="5" name="message">Message</textarea>
-                                <input type="submit" value="Send" onclick="sending(this)">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="public/js/scripts.js"></script>
-
-    </body>
-</html>	
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script src="public/js/scripts.js"></script>
+	</body>
+</html>

@@ -1,47 +1,61 @@
 header {
-	
 	position: fixed;
 	width: 100%;
 	background: #fff;
 	height: $nav-height;
 	z-index: 100;
 
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.logo {
-		float: left;
-		padding-top: 5px;
+		display: flex;
+		align-items: center;
 		img {
 			width: auto;
 			height: 65px;
+			margin-right: 15px;
 		}
-	}
-}
-
-nav {
-	float: right;
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		li {
-			padding: 0;
-			margin: 0;
-			display: inline-block;
-		}
-		a {
-			display: block;
-			line-height: $nav-height;
-			color: $text-color;
-			text-decoration: none;
-
-			font-size: 11px;
-			padding-left: 10px;
-		    @media (min-width: $screen-sm-min) {
-				font-size: $text-size;
-				padding-left: 50px;
-		    }
-			&:hover, &.active {
-				text-decoration: underline;
+		span {
+			display: none;
+			@media (min-width: $screen-sm-min) {
+				display: block;
 			}
 		}
 	}
 }
+
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	li {
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+	}
+	a {
+		display: block;
+		line-height: $nav-height;
+		color: $text-color;
+		text-decoration: none;
+
+		font-size: 11px;
+		padding-left: 10px;
+		@media (min-width: $screen-sm-min) {
+			font-size: $text-size;
+			padding-left: 50px;
+		}
+		&:hover,
+		&.active {
+			text-decoration: underline;
+		}
+	}
+}
+

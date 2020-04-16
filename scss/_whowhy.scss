@@ -1,0 +1,20 @@
+#who-why {
+	@include section-setup();
+	padding-top: $nav-height;
+	background: $frisson-black;
+	color: #fff;
+
+	h2 {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	// .who,
+	// .why {
+	// 	@include columns(12);
+
+	// 	@media (min-width: $screen-sm-min) {
+	// 		@include columns(6);
+	// 	}
+	// }
+}

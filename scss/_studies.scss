@@ -1,0 +1,49 @@
+#case-studies {
+  @include section-setup();
+
+  .study {
+    @include columns(12);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm-min) {
+      @include columns(4);
+      margin-bottom: 0;
+    }
+
+    a {
+      display: inline-block;
+      padding: 20px 10px;
+      font-size: 16px;
+      text-transform: uppercase;
+      width: 100%;
+      border: none;
+      text-align: center;
+      font-weight: 700;
+      transition: all 150ms cubic-bezier(.4, 0, .6, 1);
+      color: $frisson-black;
+      text-decoration: none;
+      background: #fff;
+      border: 2px solid $frisson-black;
+
+      &:hover {
+        &.oddschecker {
+          color: #fff;
+          background: #0FDD97;
+          border-color: #0FDD97;
+        }
+
+        &.newbury {
+          color: #fff;
+          background: #16244B;
+          border-color: #16244B;
+        }
+
+        &.alfred {
+          color: #fff;
+          background: #0E1B2B;
+          border-color: #0E1B2B;
+        }
+      }
+    }
+  }
+}
