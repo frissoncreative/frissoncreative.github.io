@@ -20,7 +20,7 @@
 		}
 	}
 
-	.video {
+	.player {
 		@include columns(12);
 
 		@media (max-width: $screen-md-min) {

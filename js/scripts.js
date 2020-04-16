@@ -1,6 +1,6 @@
 // On the load, resize dynamic images so fill the screen
 $(window).load(function(){
- 	resizeFeatureImage();
+ 	// resizeFeatureImage();
 });
 
 var waypoint = new Waypoint({

@@ -1,9 +1,9 @@
 .video {
-	// @include section-setup();
+	@include section-setup();
 
-	// color: #fff;
-	// background-image: url('../images/video.jpg');
-	// background-position: top center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
+	color: #fff;
+	background-image: url('../images/video.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
